@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0rP-AU-YiW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Get Pet App-->
+        <scene sceneID="zvl-Ks-YW8">
+            <objects>
+                <viewController id="McP-S4-WE2" customClass="InfoViewController" customModule="PetAdoption_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zfH-G2-AVk"/>
+                        <viewControllerLayoutGuide type="bottom" id="98J-MB-cro"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CbM-9t-ObS" customClass="BackgroundView" customModule="PetAdoption_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s50-ks-ZuE">
+                                <rect key="frame" x="20" y="72" width="335" height="456"/>
+                                <string key="text">Nunc dignissim, risus vel feugiat porttitor, lacus massa facilisis leo, eu ornare diam arcu dictum eros. Donec bibendum, sem nec ultricies porta, odio nisi ultrices nisi, eu sollicitudin nibh tellus sit amet ligula. Nullam justo justo, finibus et purus ac, vulputate hendrerit quam. Nulla suscipit nisl massa, eu fringilla est fringilla sed. Sed in nunc et ex porta porttitor vel a justo. Curabitur non metus ac nulla eleifend gravida. Aenean lorem enim, accumsan posuere vehicula at, mollis et elit. Curabitur ullamcorper laoreet tincidunt.
+
+Maecenas sem lectus, efficitur quis commodo id, vehicula eget nulla. Sed in convallis mauris, quis lacinia magna. Praesent feugiat lorem eu lorem molestie, dignissim finibus diam vehicula. Nullam cursus est ut facilisis feugiat. Duis id bibendum metus. Nam pellentesque nec purus id venenatis. Curabitur non metus massa. In ut pharetra augue.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cfo logo" translatesAutoresizingMaskIntoConstraints="NO" id="wNh-gr-hyd">
+                                <rect key="frame" x="20" y="559" width="231" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="LmH-D6-jEi"/>
+                                    <constraint firstAttribute="height" constant="81" id="upJ-fl-kSb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wNh-gr-hyd" firstAttribute="top" secondItem="s50-ks-ZuE" secondAttribute="bottom" constant="31" id="35j-Yg-kCa"/>
+                            <constraint firstAttribute="trailing" secondItem="s50-ks-ZuE" secondAttribute="trailing" constant="20" id="9Kh-UB-f21"/>
+                            <constraint firstItem="s50-ks-ZuE" firstAttribute="centerX" secondItem="CbM-9t-ObS" secondAttribute="centerX" id="Z0W-7S-Hhs"/>
+                            <constraint firstItem="s50-ks-ZuE" firstAttribute="leading" secondItem="CbM-9t-ObS" secondAttribute="leading" constant="20" id="h0q-Nu-Awd"/>
+                            <constraint firstItem="wNh-gr-hyd" firstAttribute="leading" secondItem="s50-ks-ZuE" secondAttribute="leading" id="jcY-8l-mOF"/>
+                            <constraint firstItem="s50-ks-ZuE" firstAttribute="top" secondItem="zfH-G2-AVk" secondAttribute="bottom" constant="8" id="ymQ-t4-9tW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Get Pet App" id="xbf-ON-Hrt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rki-nw-5gh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="1944"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="kIA-ki-E0H">
+            <objects>
+                <navigationController id="0rP-AU-YiW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="About" selectedImage="About Filled" id="fmb-7j-Xn5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KwE-Z2-aoP" customClass="TransparentNavBar" customModule="PetAdoption_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="McP-S4-WE2" kind="relationship" relationship="rootViewController" id="IFa-bI-W86"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TNZ-kg-Sek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="1943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="About" width="25" height="25"/>
+        <image name="About Filled" width="25" height="25"/>
+        <image name="cfo logo" width="1007" height="363"/>
+    </resources>
+</document>
